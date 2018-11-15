@@ -1,95 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>All In One</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/main.css">
+    <title>All In One</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
-  <div class="top_nav">
-     <div class="row">
-        <div class="col-md-3">
-           <img class="logo" src="images/logo.jpeg">
-        </div>
-        <div class="col-md-6">
-           <p>You think, we create, we design</p>
-        </div>
-        <div class="col-md-3">
-           <img src="images/support.png" height="40px" width="30px">
-           +250780348088
-        </div>
-      </div>
-  </div> 
-  <nav>
-    <ul>
-      <li>
-        <a href="#">All Products</a>
-      </li>
-      <li>
-        <a href="#">Business Cards</a>
-      </li>
-      <li>
-        <a href="#">Marketing Materials</a>
-      </li>
-      <li>
-        <a href="#">Signs & Posters</a>
-      </li>
-      <li>
-        <a href="#">Photo Gifts</a>
-      </li>
-      <li>
-        <a href="#">Invitations & Announcements</a>
-      </li>
-       <li>
-        <a href="#">Photography</a>
-      </li>
-   </ul>
     
-  </nav>
+<header>
+    <div class="top_nav">
+        <div class="logo_holder">
+            <img class="logo" src="images/logo.png">
+        </div>
+        <div class="title_holder">
+            <p class="company_name"><strong>ALL IN INTERNATIONAL PRODUCTION LTD</strong></p>
+            <p class="company_slogan">You think, we create, we design</p>
+        </div>
+        <div class="menus_holder">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">All services</a>
+                    <ul>
+                        <li><a href="#">Photo Gifts</a></li>
+                        <li><a href="#">Signs & Posters</a></li>
+                        <li><a href="#">Marketing Materials</a></li>
+                        <li><a href="#">Invitations & Announcments</a></li>
+                        <li><a href="#">Business Cards</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Photo Gifts</a></li>
+                <li><a href="#">Signs & Posters</a></li>
+                <li><a href="#">Marketing Materials</a></li>
+                <li><a href="#">Invitations & Announcments</a></li>
+                <li><a href="#">Business Cards</a></li>
+                <li><a href="#">T-shirts</a></li>
+                <li><a href="#">Photography</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
-<div class="container-fluid">
+    
+<div class="container">
    <div class="row">
-     <div class="slideshow">
-       <img class="mySlides w3-animate-fading" src="images/slider1.png">
-       <img class="mySlides w3-animate-fading" src="images/slider2.png">  
-     </div>
-       
-     <div class="row" style="background-color:white;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/slider1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slider2.jpg"alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slider2.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="row" style="background-color:white;">
         <div class="col-sm-12">
-           <div class="text-center">
-               <h3 class="myGreenHeaders">About Us</h3>
-           </div>  
+            <div class="text-center">
+                <h3 class="myGreenHeaders">About Us</h3>
+            </div>
         </div>
         <div class="col-sm-6">
-          <div class="aboutLeft">
-            <p class="firstPL">We are a premier, one-stop custom print and promo shop proudly serving the Kigali area and beyond for over 2 years.</p>
-            
-            <p class="secondPL">From large format digital to direct mailers to custom packaging and promotional products, our print, promo, and packaging experts are ready to turn your project into a thing of beauty.</p>
-          </div>
+            <div class="aboutLeft">
+                <p class="firstPL">We are a premier, one-stop custom print and promo shop proudly serving the Kigali area and beyond for over 2 years.</p>
+                <p class="secondPL">From large format digital to direct mailers to custom packaging and promotional products, our print, promo, and packaging experts are ready to turn your project into a thing of beauty.</p>
+            </div>
         </div>
         <div class="col-sm-6">
           <div class="aboutRight">
-           <p class="firstPR">If you're looking for a top-quality custom printer with friendly, 
+           <p class="firstPR">If you're looking for a top-quality custom printer with friendly,
            skilled professionals, look no further. We'll work with you every
            step of the way as part of our unwavering commitment to
            exceed your expectations.</p>
            <p class="secondPR">
-           All In prod, a solutions-driven graphic communications 
-           company with a history of success connecting brands with 
-           consumers. While some companies simply provide products, 
+           All In prod, a solutions-driven graphic communications
+           company with a history of success connecting brands with
+           consumers. While some companies simply provide products,
            All In provides integrated solutions that deliver your message,
            change perceptions and drive sales. Think of us as your
            full-service creative agency without the agency fees.
            </p>
-           <p class="thirdPR">Whether you are implementing an employee incentive program, 
+           <p class="thirdPR">Whether you are implementing an employee incentive program,
            designing a direct marketing campaign or generating buzz for an
            upcoming event, All In uses creativity and innovation to connect
-           you with your audience. Every project is an opportunity to 
+           you with your audience. Every project is an opportunity to
            explore, with our clients, the unlimited possibilities and potential
-           this collaboration brings. Allow us to make a measurable 
+           this collaboration brings. Allow us to make a measurable
            difference for your marketing communications.</p>
           </div>
        </div>
@@ -97,125 +119,80 @@
      <div class="col-sm-12">
        <div class="text-center">
            <h3 class="myGreenHeaders">Our services</h3>
-       </div>  
-     </div>
-     <div class="col-sm-4">
-       <div class="row">
-         <div class="col-md-12"><div class="w3-card-4">
-              <img src="images/slider1.png" class="w3-hover-opacity" width="100%">
-             <div class="col-md-12"><h3>Banners</h3></div>
-             </div></div> 
-          
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
        </div>
      </div>
-     <div class="col-sm-4">
-       <div class="row">
-         <div class="col-md-12"><div class="w3-card-4">
-              <img src="images/slider1.png" class="w3-hover-opacity" width="100%">
-             <div class="col-md-12"><h3>Banners</h3></div>
-             </div></div> 
-          
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
-       </div>
-     </div>
-     <div class="col-sm-4">
-       <div class="row">
-         <div class="col-md-12"><div class="w3-card-4">
-              <img src="images/slider1.png" class="w3-hover-opacity" width="100%">
-             <div class="col-md-12"><h3>Banners</h3></div>
-             </div></div> 
-          
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
-       </div>
-     </div>
-     <div class="col-sm-4">
-         <div class="row">
-         <div class="col-md-12"><img src="images/slider1.png" width="100%"></div> 
-         <div class="col-md-12"><h3>Banners</h3></div> 
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
-       </div>  
-     </div>
-     <div class="col-sm-4">
-         <div class="row">
-         <div class="col-md-12"><img src="images/slider1.png" width="100%"></div> 
-         <div class="col-md-12"><h3>Banners</h3></div> 
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
-       </div>  
-     </div>
-     <div class="col-sm-4">
-         <div class="row">
-         <div class="col-md-12"><img src="images/slider1.png" width="100%"></div> 
-         <div class="col-md-12"><h3>Banners</h3></div> 
-<!--
-         <div class="col-md-12">Beauty is in the eye of the beholder, but a powerful 
-         and memorable first impression with a custom 
-         designed envelope helps too. Our staff of experts 
-         will design and print envelopes of all sizes 
-         and formats.</div> 
--->
-       </div>  
-     </div>
+
+
      <div class="col-sm-12">
-       <div class="text-center"><h3>Happy clients</h3></div>  
+       <div class="text-center"><h3>Happy clients</h3></div>
      </div>
      <div class="col-sm-12" style="background-color:white;">
-       <br><br><br><br> 
+       <br><br><br><br>
        <br><br><br><br>
        <br><br><br><br>
      </div>
    </div>
 </div>
+    
+<!--Footer section    -->
 <footer style="background-color:black;">
-       <br><br><br><br> 
        <br><br><br><br>
        <br><br><br><br>
-     </footer>
-<script>
-var slideIndex = 0;
-carousel();
+       <br><br><br><br>
+</footer>
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}   
+<!--JAVASCRIPT-->
+<!--JQuery-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--Slider-->
+<script>
+$('.carousel').carousel()
+</script>
+<!--    -->
+<script>
+    
+/*global $ */
+$(document).ready(function () {
+
+    "use strict";
+
+    $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+    //Checks if li has sub (ul) and adds class for toggle icon - just an UI
+
+
+    $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+    //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
+
+    $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">Navigation</a>");
+
+    //Adds menu-mobile class (for mobile toggle menu) before the normal menu
+    //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
+    //Normal menu is hidden if width is below 959px, and jquery adds mobile menu
+    //Done this way so it can be used with wordpress without any trouble
+
+    $(".menu > ul > li").hover(function (e) {
+        if ($(window).width() > 943) {
+            $(this).children("ul").stop(true, false).fadeToggle(150);
+            e.preventDefault();
+        }
+    });
+    //If width is more than 943px dropdowns are displayed on hover
+
+    $(".menu > ul > li").click(function () {
+        if ($(window).width() <= 943) {
+            $(this).children("ul").fadeToggle(150);
+        }
+    });
+    //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
+
+    $(".menu-mobile").click(function (e) {
+        $(".menu > ul").toggleClass('show-on-mobile');
+        e.preventDefault();
+    });
+    //when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story (thanks mwl from stackoverflow)
+
+});    
 </script>
 </body>
 </html>

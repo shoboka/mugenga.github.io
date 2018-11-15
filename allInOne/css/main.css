@@ -1,60 +1,298 @@
 body{
- background-color: #F4F4F4;
+ background-color: #fafafa;
 }
 .myGreenHeaders{
     color: #19848B;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* TOP NAVIGATION */
 .top_nav{
-    width: 100%;
-    background-color: white;
-    padding: 10px 10px 10px 10px;
+    padding-top: 10px;
+    margin: auto;
+    width: 95%;
+    background-color:#fafafa;
     color: black;
+    display: flex;
+/*    border: 1px black solid;*/
+    height: 70px;
 }
-.top_nav .logo{
-    height:50px;
+.logo_holder{
+    flex: 0.5;
+    padding-top: 13px;
+
+}
+.logo_holder .logo{
+    height:65px;
     width: 100px;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
-.top_nav div p{
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 200px !important;
+.title_holder{
+    flex:4;
+    padding-top: 13px;
+    line-height: 15px;
+/*    border: 1px black solid;*/
 }
-ul {
+.title_holder .company_name{
+    font-size: 20px;
+    letter-spacing: 0.0001px;
+    
+}
+.title_holder .company_slogan{
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    margin-left: 15%;
+    color: #ef6828
+    
+}
+.menus_holder{
+    flex:1;
+    padding-top: 13px;
+}
+.logo_wrapper, .slogan_nav, .contact_nav{
+
+}
+
+.menus_holder ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    float:  right;
 }
 
-li {
+.menus_holder li {
     float: left;
-    border-left: 1px solid grey;
 }
 
-li a {
+.menus_holder li a {
     display: block;
-    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 6px;
     text-decoration: none;
+    color: #777777;
 }
+
 /* Change the link color to #111 (black) on hover */
-li:hover {
-    border-top: 1px solid black;
+.menus_holder li a:hover {
+   background-color: #cd1b22;
+    color: white;
 }
-.slideshow{
-    margin-top: 20px;
+/* Main Menu of the website with services*/
+.menu_bar{
+ margin: auto;
+    width: 90%;
+    background-color: #f8f8f8;
+    color: black;
+}
+
+#d1{
+   width: 15%;
+   float: left;
+   height: 50px;
+}
+#d2{
+    width: 80%;
+    margin-left: 21%;
+    height: 50px;
+    padding: 2px 2px 2px 2px;
+}
+/*  Main menu stylesheet */
+.menu-container {
+    width: 95%;
+    margin: 0 auto;
+    background:#fafafa;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-mobile {
+    display: none;
+    padding: 20px;
+}
+
+.menu-mobile:after {
+    content: "\f394";
+    font-family: "Ionicons";
+    font-size: 2.5rem;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.menu-dropdown-icon:before {
+    content: "\f489";
+    font-family: "Ionicons";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+}
+
+.menu > ul {
+    margin: 0 auto;
     width: 100%;
-    
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box; 
 }
-.slideshow img{
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+.menu > ul:after {
+    clear: both;
+}
+.menu > ul > li{
+    float: left;
+    background: #fafafa;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    border-top:2px #f8f8f8 solid;
+    border-right: 1px #f06828 solid;
+}
+.menu > ul > li:last-child {
+    border-right:0;
+}
+
+.menu > ul > li a {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.menu > ul > li:hover {
+    border-top:2px #ce1c23 solid;
+    color: black
+}
+
+.menu > ul > li > ul {
+    display: none;
+    width: 50%;
+    background: #f8f8f8;
+/*    padding: 10px;*/
+
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: inline;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li a {
+    color: black;
+    padding-top:1px;;
+    width: 95%;
+    display: block;
+    line-height: 0.1px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu > ul > li > ul.normal-sub {
+    width: 300px;
+    left: auto;
+    padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
     width: 100%;
-    height: 500px;
 }
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 959px) {
+    .menu-container {
+        width: 100%;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu > ul > li a {
+        padding: 1.5em;
+        width: 100%;
+        display: block;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+         z-index: 99;
+        position: absolute;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+}
+
 .aboutLeft{
     padding: 0px 10px 0px 50px;
 }
@@ -75,3 +313,4 @@ li:hover {
     font-size:1em;
     color: #19848B;
 }
+
